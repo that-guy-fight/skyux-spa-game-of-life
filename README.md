@@ -1,3 +1,5 @@
+![alt tag](https://imgur.com/lObxSb1 "Description goes here")
+
 # The Game of Life
 ## Requirements
 1. NodeJs installed. Found here: https://nodejs.org/en/download/
