@@ -1,4 +1,4 @@
-![alt tag](https://i.imgur.com/lObxSb1.png "Description goes here")
+![alt tag](https://i.imgur.com/lObxSb1.png "Screen cap of interface")
 
 # The Game of Life
 ## Requirements
