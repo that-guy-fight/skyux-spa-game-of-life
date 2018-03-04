@@ -2,22 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-about',
-  templateUrl: './about.component.html'
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
   public team = [
-    {
-      name: 'Robert Hernandez',
-      email: 'rh@edu.org'
-    },
-    {
-      name: 'Samantha Jones',
-      email: 'sam@jones.com'
-    },
-    {
-      name: 'Michael Jordan',
-      email: 'michael@jordon.net'
-    },
     {
       name: 'Brandon Fightmaster',
       email: 'that.guy.fight@gmail.com'

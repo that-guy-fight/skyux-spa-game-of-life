@@ -9,7 +9,7 @@
                     (keyup.enter)="submitInput()" (keypress)="checkInputKey($event)">
             </div>
             <div class="margin-5">
-                <button class="sky-btn sky-btn-primary" (click)="stop()">Stop</button>
+                <button class="sky-btn sky-btn-primary" (click)="pause()">Pause</button>
                 <button class="sky-btn sky-btn-primary" (click)="reset()">Reset</button>
                 <button class="sky-btn sky-btn-primary" [disabled]="!canActivate || userNumber == undefined
                     || userNumber.length === 0" (click)="activate()">Activate</button>

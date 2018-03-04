@@ -66,7 +66,7 @@ export class BlinkyManagerComponent implements OnInit, OnDestroy {
     }, this.ticSpeed * 1000);
   }
 
-  private stop() {
+  private pause() {
     this.canActivate = true;
     this.isRunning.state = false;
     if (this.myInterval) {
@@ -75,7 +75,7 @@ export class BlinkyManagerComponent implements OnInit, OnDestroy {
   }
 
   private reset() {
-    this.stop();
+    this.pause();
     this.userNumber = undefined;
     this.canActivate = false;
     this.invalidInput = false;
