@@ -1,0 +1,12 @@
+<app-nav role="navigation"></app-nav>
+<main>
+  <h1>{{ 'game_title' | skyAppResources }}</h1>
+
+  <p>Welcome to Brandon Fightmaster's rendition of {{ 'game_title' | skyAppResources }}.</p>
+
+  <sky-alert alertType="info">
+    If you are unfamiliar with how this game works, please visit the Instructions tab.
+  </sky-alert>
+
+  <app-blinky-manager></app-blinky-manager>
+</main>

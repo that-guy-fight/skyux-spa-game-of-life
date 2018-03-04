@@ -1,0 +1,22 @@
+.invisible {
+    visibility: hidden;
+}
+
+.center-div {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    top: 50%;
+}
+
+.control-box {
+    border: solid 1px #00b4f1;
+    border-radius: 5px;
+    background-color:#81d4f7;
+    padding: 5px;
+}
+
+.margin-5 {
+    margin: 5px;
+}

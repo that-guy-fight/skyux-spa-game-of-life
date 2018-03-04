@@ -1,0 +1,35 @@
+<div>
+    <div class="center-div">
+        <form class="control-box">
+            <div class="margin-5">
+                Type the length of the rows and columns, and press 'Enter':
+            </div>
+            <div class="margin-5">
+                <input name="userNumber" [type]="number" autocomplete="off" [(ngModel)]="userNumber"
+                    (keyup.enter)="submitInput()" (keypress)="checkInputKey($event)">
+            </div>
+            <div class="margin-5">
+                <button class="sky-btn sky-btn-primary" (click)="stop()">Stop</button>
+                <button class="sky-btn sky-btn-primary" (click)="reset()">Reset</button>
+                <button class="sky-btn sky-btn-primary" [disabled]="!canActivate || userNumber == undefined
+                    || userNumber.length === 0" (click)="activate()">Activate</button>
+            </div>
+            <div class="margin-5">
+                <sky-alert [alertType]="warning" [ngClass]="{'invisible' : !invalidInput}">
+                    Incorrect input format. Please enter an integer
+                </sky-alert>
+            </div>
+        </form>
+    </div>
+    <div class="center-div">
+        <table>
+            <tbody *ngIf="blinkyReferences.length > 0">
+                <tr *ngFor="let row of blinkyReferences; let i = index">
+                    <td *ngFor="let element of row; let j = index">
+                        <app-blinky [reference]="blinkyReferences[i][j]" [isRunning]="isRunning"></app-blinky>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

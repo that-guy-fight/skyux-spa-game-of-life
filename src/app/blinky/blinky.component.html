@@ -1,0 +1,2 @@
+<button class="blinker" [disabled]="isRunning.state" (click)="toggleBlinker()" 
+    [ngClass]="{'alive': reference.alive === true, 'dead': reference.alive === false}"></button>
