@@ -1,4 +1,4 @@
-![alt tag](https://imgur.com/lObxSb1 "Description goes here")
+![alt tag](https://i.imgur.com/lObxSb1.png "Description goes here")
 
 # The Game of Life
 ## Requirements
